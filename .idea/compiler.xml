@@ -25,6 +25,7 @@
         <module name="bean" />
         <module name="common" />
         <module name="core" />
+        <module name="dao" />
         <module name="web" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,8 @@
       <module name="bean" target="1.5" />
       <module name="common" target="1.5" />
       <module name="core" target="1.5" />
+      <module name="dao" target="1.5" />
+      <module name="test" target="1.5" />
       <module name="web" target="1.5" />
     </bytecodeTargetLevel>
   </component>

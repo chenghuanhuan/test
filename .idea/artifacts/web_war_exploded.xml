@@ -6,6 +6,24 @@
         <element id="directory" name="classes">
           <element id="module-output" name="web" />
         </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dao" />
+          </element>
+          <element id="archive" name="common-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="common" />
+          </element>
+          <element id="archive" name="core-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="core" />
+          </element>
+          <element id="archive" name="web-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="web" />
+          </element>
+          <element id="archive" name="bean-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="bean" />
+          </element>
+          <element id="library" level="project" name="Maven: junit:junit:4.5" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" />
