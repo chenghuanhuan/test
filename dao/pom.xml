@@ -3,11 +3,11 @@
   <parent>
     <groupId>com.wanghua</groupId>
     <artifactId>test</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1.9-wx-RELEASE</version>
   </parent>
   <groupId>com.wanghua</groupId>
   <artifactId>dao</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1.9-wx-RELEASE</version>
   <packaging>jar</packaging>
   <name>dao</name>
 
