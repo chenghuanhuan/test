@@ -65,12 +65,12 @@
 
   <distributionManagement>
     <repository>
-      <id>my-nexus-releases</id>
+      <id>nexus-releases</id>
       <url>http://192.168.1.111:8081/nexus/content/repositories/releases/</url>
     </repository>
 
     <snapshotRepository>
-      <id>my-nexus-snapshot</id>
+      <id>nexus-snapshot</id>
       <url>http://192.168.1.111:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
