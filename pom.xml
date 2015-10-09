@@ -14,41 +14,43 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <test.version>1.0-SNAPSHOT</test.version>
   </properties>
+  <dependencyManagement>
+    <dependencies>
 
-  <dependencies>
+      <dependency>
+        <groupId>com.wanghua</groupId>
+        <artifactId>dao</artifactId>
+        <version>${test.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.wanghua</groupId>
+        <artifactId>common</artifactId>
+        <version>${test.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.wanghua</groupId>
+        <artifactId>core</artifactId>
+        <version>${test.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.wanghua</groupId>
+        <artifactId>web</artifactId>
+        <version>${test.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.wanghua</groupId>
+        <artifactId>bean</artifactId>
+        <version>${test.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>com.wanghua</groupId>
-      <artifactId>dao</artifactId>
-      <version>${test.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.wanghua</groupId>
-      <artifactId>common</artifactId>
-      <version>${test.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.wanghua</groupId>
-      <artifactId>core</artifactId>
-      <version>${test.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.wanghua</groupId>
-      <artifactId>web</artifactId>
-      <version>${test.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.wanghua</groupId>
-      <artifactId>bean</artifactId>
-      <version>${test.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.5</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.5</version>
-    </dependency>
-  </dependencies>
 
   <modules>
     <module>bean</module>

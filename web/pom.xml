@@ -14,14 +14,13 @@
 
   <name>web</name>
 
-  <dependencyManagement>
+
     <dependencies>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
       </dependency>
     </dependencies>
-  </dependencyManagement>
 
   <build>
     <finalName>web</finalName>
