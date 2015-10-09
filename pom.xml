@@ -51,6 +51,24 @@
     </dependencies>
   </dependencyManagement>
 
+  <!-- 私有仓库 -->
+  <repositories>
+    <repository>
+      <id>nexus repository</id>
+      <name>intranet public groups</name>
+      <url>http://192.168.1.111:8081/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <scm>
+    <connection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</connection>
+    <developerConnection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</developerConnection>
+    <url>http://192.168.1.111:8080/gitbucket/git/root/test.git</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <modules>
     <module>bean</module>
