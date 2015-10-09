@@ -63,6 +63,18 @@
     </repository>
   </repositories>
 
+  <distributionManagement>
+    <repository>
+      <id>my-nexus-releases</id>
+      <url>http://192.168.1.111:8081/nexus/content/repositories/releases/</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>my-nexus-snapshot</id>
+      <url>http://192.168.1.111:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <scm>
     <connection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</connection>
     <developerConnection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</developerConnection>
