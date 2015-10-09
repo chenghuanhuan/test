@@ -3,7 +3,7 @@
 
   <groupId>com.wanghua</groupId>
   <artifactId>test</artifactId>
-  <version>1.1.9-wx-RELEASE</version>
+  <version>1.1.9-wx-RELEASE-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>test</name>
@@ -11,7 +11,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <test.version>1.1.9-wx-RELEASE</test.version>
+    <test.version>1.1.9-wx-RELEASE-SNAPSHOT</test.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -78,7 +78,7 @@
     <connection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</connection>
     <developerConnection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</developerConnection>
     <url>http://192.168.1.111:8080/gitbucket/git/root/test.git</url>
-    <tag>test-1.1.9-wx-RELEASE</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
