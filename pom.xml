@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wanghua</groupId>
   <artifactId>test</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>pom</packaging>
 
   <name>test</name>
@@ -12,7 +11,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <test.version>1.0-SNAPSHOT</test.version>
+    <test.version>1.0</test.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -79,7 +78,7 @@
     <connection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</connection>
     <developerConnection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</developerConnection>
     <url>http://192.168.1.111:8080/gitbucket/git/root/test.git</url>
-    <tag>HEAD</tag>
+    <tag>test-1.0</tag>
   </scm>
 
   <build>
