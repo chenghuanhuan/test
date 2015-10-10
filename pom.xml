@@ -12,6 +12,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <test.version>1.1.9-wx-RELEASE-SNAPSHOT</test.version>
+    <git.url>http://192.168.1.111:8080/gitbucket/git/root/test.git</git.url>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -75,9 +76,9 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</connection>
-    <developerConnection>scm:git:http://192.168.1.111:8080/gitbucket/git/root/test.git</developerConnection>
-    <url>http://192.168.1.111:8080/gitbucket/git/root/test.git</url>
+    <connection>scm:git:${git.url}</connection>
+    <developerConnection>scm:git:${git.url}</developerConnection>
+    <url>${git.url}</url>
     <tag>HEAD</tag>
   </scm>
 
