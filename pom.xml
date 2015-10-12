@@ -3,7 +3,7 @@
 
   <groupId>com.wanghua</groupId>
   <artifactId>test</artifactId>
-  <version>1.1.9-wx-RELEASE-SNAPSHOT</version>
+  <version>1.1.10-wx-RELEASE-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>test</name>
@@ -11,7 +11,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <test.version>1.1.9-wx-RELEASE-SNAPSHOT</test.version>
+    <test.version>1.1.10-wx-RELEASE-SNAPSHOT</test.version>
     <git.url>http://192.168.1.111:9080/gitbucket/git/root/test.git</git.url>
     <springframework.version>3.1.1.RELEASE</springframework.version>
   </properties>
