@@ -105,10 +105,10 @@
   </build>
 
   <modules>
-    <module>bean</module>
-    <module>core</module>
-    <module>common</module>
-    <module>web</module>
-    <module>dao</module>
+    <module>test-bean</module>
+    <module>test-core</module>
+    <module>test-common</module>
+    <module>test-web</module>
+    <module>test-dao</module>
   </modules>
 </project>

@@ -5,7 +5,7 @@
     <artifactId>test</artifactId>
     <version>1.1.9-wx-RELEASE-SNAPSHOT</version>
   </parent>
-  <artifactId>core</artifactId>
+  <artifactId>test-core</artifactId>
   <packaging>jar</packaging>
 
 
