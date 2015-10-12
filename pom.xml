@@ -12,7 +12,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <test.version>1.1.9-wx-RELEASE-SNAPSHOT</test.version>
-    <git.url>http://192.168.1.111:8080/gitbucket/git/root/test.git</git.url>
+    <git.url>http://192.168.1.111:9080/gitbucket/git/root/test.git</git.url>
     <springframework.version>3.1.1.RELEASE</springframework.version>
   </properties>
   <dependencyManagement>
