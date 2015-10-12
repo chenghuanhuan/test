@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	       http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	       http://www.springframework.org/schema/context
+	       http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	       http://www.springframework.org/schema/aop
+	       http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+	       http://www.springframework.org/schema/tx
+	       http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+    <bean class="com.wanghua.spring.SpringPropertyConfigurer">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath*:/config/*.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- redis对象池配置 -->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!-- 连接池的最大数据库连接数。设为0表示无限制。-->
+        <property name="maxActive" value="${test.redis.pool.maxActive}"/>
+        <!-- 最大空闲数，数据库连接的最大空闲时间。超过空闲时间，数据库连接将被标记为不可用，然后被释放。 -->
+        <property name="maxIdle" value="${test.redis.pool.maxIdle}"/>
+        <!-- 最大等待毫秒数,单位为 ms,超过时间会出错误信息 -->
+        <property name="maxWait" value="${test.redis.pool.maxWaitTime}"/>
+    </bean>
+
+    <!-- redis连接工厂 -->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="${test.redis.host}"/>
+        <property name="port" value="${test.redis.port}"/>
+        <property name="database" value="${test.redis.dbIndex}"/>
+        <property name="timeout" value="${test.redis.pool.timeout}"/>
+        <property name="poolConfig" ref="jedisPoolConfig"/>
+    </bean>
+
+    <!--redis模板类 -->
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+        <property name="connectionFactory" ref="jedisConnectionFactory"/>
+    </bean>
+    <context:component-scan base-package="com.wanghua" />
+</beans>

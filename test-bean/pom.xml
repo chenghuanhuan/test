@@ -11,9 +11,7 @@
   <artifactId>test-bean</artifactId>
   <version>1.1.9-wx-RELEASE-SNAPSHOT</version>
   <packaging>jar</packaging>
-
-  <name>bean</name>
-  <url>http://maven.apache.org</url>
+  <name>test-bean</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
