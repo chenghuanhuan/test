@@ -18,7 +18,7 @@
 	<mvc:annotation-driven>
 		<mvc:message-converters register-defaults="true">
 			<!-- 转换为String -->
-			<bean class="com.ofpay.httpservice.base.UTF8StringHttpMessageConverter" />
+			<bean class="com.wanghua.base.UTF8StringHttpMessageConverter" />
 			<!-- 转换为JSON -->
 			<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
 		</mvc:message-converters>
